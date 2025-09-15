@@ -12,13 +12,6 @@ aside {
     text-align: center;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px black;
-}
 
 nav {
     background-color: darkblue;
@@ -41,6 +34,12 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
 p {
     padding: 0;
 }
