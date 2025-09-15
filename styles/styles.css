@@ -15,6 +15,9 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px black;
 }
 
 nav {
@@ -32,7 +35,7 @@ h1 {
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
