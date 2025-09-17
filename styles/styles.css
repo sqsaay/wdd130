@@ -36,7 +36,7 @@ h1 {
 }
 
 main {
-    max-width: 640px;
+    max-width: 840px;
 }
 
 main img {
@@ -59,11 +59,13 @@ aside img {
 
 aside h2 {
     position: relative;
+    
 }
 
 p {
     margin: 2rem;
-    text-align: justify;
+    padding: 1rem;
+    text-align: center;
 }
 
 footer {
@@ -76,7 +78,7 @@ footer {
 
 .box {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 5px solid rgb(0 0 0 / 10%);
     padding: 1rem;
     background-color: #e8ccc4;
     color: #0e8e8e;
@@ -88,5 +90,10 @@ footer {
     padding-left:  2rem;
     background-color: #dca49c;
     color: #0e8e8e;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 5px solid rgb(0 0 0 / 10%);
+}
+
+#h2-p {
+    margin: 2rem;
+    padding: ;
 }
