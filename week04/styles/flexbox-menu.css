@@ -13,8 +13,10 @@ nav ul {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    justify-content: ;
+   align-self:
 }
 
 nav a {
