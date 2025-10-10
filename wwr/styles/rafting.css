@@ -7,21 +7,10 @@
     --body-font: Helvetica;
 }
 
-header {
-    background-color: var(--accent1-color);
-    color: var(--accent1-color);
-    opacity: 0.9;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    font-family: var(--body-font);
-    color: var(--accent1-color)
 }
 
 header, main, footer{
@@ -29,37 +18,75 @@ header, main, footer{
     margin: 0 auto;
 }
 
+header {
+    background-color: var(--accent1-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+header img{
+    margin: 1em;
+    display: flex;
+    justify-self: right;
+    align-self: center;
+
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--accent1-color)
+}
+
+
+nav ul{
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin: 1em;
 }
 
 h1{
-    position:absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent2-color);
-    color: white;
+    position: absolute;
+    top: 50px;
+    justify-self: center;
+    color: rgb(252, 252, 252);
     border-radius: 25px;
 }
 
+nav{
+    width: 100%;
+}
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
-    
+    block-size: auto;
+
 }
 
 a {
     color: white;
 }
 
-/*Classes or IDs styled*/
-.socialmedia a{
-    text-decoration:none;
+
+footer{
+    background-color: var(--accent1-color);
+    color: black;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
+
+/*Classes or IDs styled*/
 
 .hero {
     position: relative;
@@ -75,18 +102,19 @@ a {
     float: right;
     width: 125px;
     border-radius: 25px;
+    margin-left:25px;
     
 }
 .hero article {
     position:absolute;
-    margin: 0;
-    top: 100px;
+    top: 200px;
+    right:-16px;
     width: 100%;
     padding: 16px;
-    text-align: center;
+    text-align: left;
     opacity: 0.85;
     background-color: var(--secondary-color);
-    border-radius: 20px;
+ 
     
 
 }
@@ -94,9 +122,31 @@ a {
     position:relative;
     top: 1rem;
     left: 1rem;
-    text-align: left;
+    text-align: center;
     margin: 0;
     opacity: 0.8;
     color: white;
     
 }
+
+.history {
+  
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    display: flex;
+    align-items: center;
+}
+
+.adventure img{
+    width: 155px;    
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.adventure figure{
+    justify-items: center;
+}
+
