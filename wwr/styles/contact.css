@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #4c5f54;
+    --secondary-color: #416437;
+    --accent1-color: #455B2C;
+    --accent2-color: #53793a;
+    --heading-font: "Arial";
+    --body-font: Helvetica;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2{
+    text-align: center;
+}
+
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+    
+}
+
+header {
+    background-color: var(--accent1-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    border: 2px solid black;
+}
+
+header img{
+    margin: 1em;
+    display: flex;
+    justify-self: right;
+    align-self: center;
+}
+
+nav ul{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+   
+}
+
+li{
+    display: grid;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+nav{
+    width: 100%;
+}
+nav{
+    margin: 16px;
+    padding: 8px;
+    block-size: auto;
+
+}
+
+
+button {
+    width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+footer{
+    margin-top: .5rem;
+    border: 2px solid black;
+    background-color: var(--accent1-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+/*Class selector*/
+.form-item{
+    margin-bottom:7px;
+    max-width: 840px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2.8rem;
+}
+
+.rows{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+}
+.row1{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .3rem;
+}
+.row1 input{
+    padding: 0.2rem;
+    line-height: 1rem;
+    width: 13rem;
+    border-radius: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.row3{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    
+}
+
+.row4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.row4 label{
+    margin-left: -30px;
+}
+
+.contact-us{
+    margin-bottom: 2rem;
+}
+.contact-us p{
+    text-align: center;
+    padding: 1px;
+}
+
+.pre-employees{
+    border: 2px solid black;
+    padding: 2rem;
+    width: 840px;
+}
+
+.employees {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employees{
+    text-align: center;
+}
+a:link, 
+a:visited{
+    color: white;
+    text-decoration: none;
+}

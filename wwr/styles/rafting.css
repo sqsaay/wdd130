@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 header, main, footer{
@@ -114,9 +115,6 @@ footer{
     text-align: left;
     opacity: 0.85;
     background-color: var(--secondary-color);
- 
-    
-
 }
 .hero p {
     position:relative;
@@ -126,7 +124,7 @@ footer{
     margin: 0;
     opacity: 0.8;
     color: white;
-    
+
 }
 
 .history {
