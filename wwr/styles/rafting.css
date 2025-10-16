@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4c5f54;
     --secondary-color: #416437;
-    --accent1-color: #6b8d43;
+    --accent1-color: #455B2C;
     --accent2-color: #53793a;
     --heading-font: "Arial";
     --body-font: Helvetica;
@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -24,6 +25,7 @@ header {
     color: var(--accent1-color);
     display: grid;
     grid-template-columns: 2fr 5fr;
+    border: 2px solid black;
 }
 
 header img{
@@ -36,7 +38,7 @@ header img{
 
 body{
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: black;
 }
 
 
@@ -47,44 +49,62 @@ nav ul{
      
 }
 
-h1, h2{
+h2{
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: black;
     display: flex;
     justify-content: center;
     margin: 1em;
 }
 
-h1{
-    position: absolute;
-    top: 50px;
-    justify-self: center;
-    color: rgb(252, 252, 252);
-    border-radius: 25px;
-}
 
 nav{
     width: 100%;
 }
-nav, p, section, article{
+
+p, nav,
+article{
     margin: 16px;
     padding: 8px;
     block-size: auto;
 
 }
+legend{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+    font-size: larger;
+}
 
 a {
     color: white;
+    text-decoration: none;
 }
 
+section{
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+fieldset{
+    height: 20rem;
+    border: .2rem solid #799083;
+    border-radius: 2rem;
+    display: grid;
+    grid-gap: 0.9rem;
+    padding: 3rem;
+
+}
 /*testing*/
 footer{
     background-color: var(--accent1-color);
-    color: black;
+    color: white;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 4fr 1fr;
     justify-items: center;
     align-items: center;
+    border: 2px solid black;
 }
 
 /*Classes or IDs styled*/
@@ -99,36 +119,58 @@ footer{
     height: auto;
 }
 
-.hero article img{
+h1{
+    position: absolute;
+    transform: translateY(-32rem);
+    width: 840px;
+    background-color: #b9dbaea1;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+.inside img{
     float: right;
+    margin-top: 1.25rem;
     width: 125px;
     border-radius: 25px;
     margin-left:25px;
     
 }
-.hero article {
+.inside {
     position:absolute;
-    top: 200px;
-    right:-16px;
+    top: 25.9rem;
     width: 100%;
-    padding: 16px;
+    padding: 1px;
     text-align: left;
-    opacity: 0.85;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    color: white;
 }
-.hero p {
-    position:relative;
-    top: 1rem;
-    left: 1rem;
+.hero-about {
+    position:absolute;
+    top:7.5rem;
+    left: 18.4rem;
     text-align: center;
     margin: 0;
-    opacity: 0.8;
+    color: black;
+    border-radius: .5rem;
+
+}
+
+.hero-p{
+    position:absolute;
     color: white;
+    background-color: black;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 27rem;
+    left: 15.5rem;
 
 }
 
 .history {
-  
     display: grid;
     grid-template-columns: 3fr 2fr 3fr;
     display: flex;
@@ -136,10 +178,12 @@ footer{
 }
 
 .adventure img{
-    width: 155px;    
+    width: 155px;
+    height: 133.33px;
+    
 }
 
-.adventure {
+.adventure{
     display: flex;
     justify-content: space-evenly;
 }
@@ -148,3 +192,157 @@ footer{
     justify-items: center;
 }
 
+
+
+.hero-about p{
+    position: absolute;
+    width: 840px;
+    background-color: #455B2C;
+    
+}
+
+.hero-p button{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 250px;
+    height: 30px;
+    background-color: rgb(95, 206, 123);
+    border-radius: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero-p button:hover{
+    background-color: aquamarine;
+}
+.activities{
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly ;
+    gap: 1rem;
+}
+.activities img{
+    display: flex;
+    justify-content: space-between;
+}
+.activities figure{
+    justify-items: center;
+    text-align: center;
+}
+.activities figcaption{
+    text-align: center;
+}
+.activities img:not(.icons){
+    border: 4px solid#53793a;
+}
+.pre-employees{
+    background-color: #b9dbaea1;    
+}
+.book-now p{
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+    border-radius: 5%;
+    width: 300px;
+    background-color: var(--accent2-color);
+    top: 40px;
+    left: 125px;
+}
+
+.icons{
+    display: flex;  
+    color: aliceblue;
+}
+
+.join-us{
+    position: relative;
+    padding: 1rem;
+    background-color: #b9dbaea1;
+    opacity: 0.9;
+    border-radius: 1rem;
+}
+
+
+.join-us p{
+    width: 300px;
+    text-align: left;
+    color: black;
+}
+
+.column1{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+}
+
+.contact-us a{
+    color: var(--primary-color);
+    text-decoration:underline;
+}
+.contact-us {
+    background-color: #b9dbaea1;
+    padding: 1rem;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+}
+
+
+#newsletter-subscription img{
+    position: fixed;
+    top: 20rem;
+    left: 15rem;
+    opacity: 0.8;
+}
+.join-us form input{
+    padding: 0.5rem;
+
+}
+.button-join-us{
+    display: flex;
+    justify-content: center;
+}
+.join-us button{
+    width: 150px;
+    height: 50px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: .8rem;
+    background-color: rgb(250, 255, 249);
+}
+
+.trips-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 2px solid #000000;
+  padding: 1rem;
+  text-align: left;
+}
+
+.trips-table th {
+  background-color: #416437;
+  color: white;
+}
+
+.table-info{
+    background-color: #b9dbaea1;
+    padding: 2rem;
+}
+
+.table-info img{
+    position: fixed;
+    top: 20rem;
+    left: 15rem;
+    opacity: 0.8;
+}

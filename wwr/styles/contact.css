@@ -30,7 +30,7 @@ header {
     color: var(--accent1-color);
     display: grid;
     grid-template-columns: 2fr 5fr;
-    border: 2px solid black;
+    
 }
 
 header img{
@@ -43,15 +43,10 @@ header img{
 nav ul{
     margin: 2em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
    
 }
 
-li{
-    display: grid;
-    border: 1px solid black;
-    padding: 1rem;
-}
 
 nav{
     width: 100%;
@@ -148,8 +143,10 @@ footer{
 
 .pre-employees{
     border: 2px solid black;
+    border-radius: 1rem ;
     padding: 2rem;
     width: 840px;
+    background-color: #b9dbaea1;
 }
 
 .employees {
