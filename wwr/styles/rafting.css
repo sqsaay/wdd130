@@ -85,6 +85,7 @@ section{
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 1rem;
+    background-color: #b9dbaea1;
 }
 fieldset{
     height: 20rem;
@@ -175,6 +176,7 @@ h1{
     grid-template-columns: 3fr 2fr 3fr;
     display: flex;
     align-items: center;
+    padding: 2rem;
 }
 
 .adventure img{
@@ -186,6 +188,7 @@ h1{
 .adventure{
     display: flex;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 .adventure figure{
@@ -245,7 +248,7 @@ h1{
     border-radius: 5%;
     width: 300px;
     background-color: var(--accent2-color);
-    top: 40px;
+    transform: rotateY(40px);
     left: 125px;
 }
 
@@ -278,7 +281,7 @@ h1{
 }
 
 .contact-us a{
-    color: var(--primary-color);
+    color: rgb(97, 3, 3);
     text-decoration:underline;
 }
 .contact-us {
@@ -331,7 +334,7 @@ h1{
 }
 
 .trips-table th {
-  background-color: #416437;
+  background-color: var(--accent1-color);
   color: white;
 }
 
