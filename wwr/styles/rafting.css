@@ -239,16 +239,6 @@ h1{
 .pre-employees{
     background-color: #b9dbaea1;    
 }
-.book-now p{
-    position: absolute;
-    color: white;
-    opacity: 0.9;
-    border-radius: 5%;
-    width: 300px;
-    background-color: var(--accent2-color);
-    transform: rotateY(40px);
-    left: 125px;
-}
 
 .icons{
     display: flex;  
